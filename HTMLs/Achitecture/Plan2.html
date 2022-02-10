@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSSs/Achitecture/Plan1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="row header">
+        <div class="col-md-4 div1"
+            style="margin-right: 20px; font-family: Bernard MT Condensed, Arial, Helvetica, sans-serif;">
+            <h1>My Free Works</h1>
+        </div>
+        <div class="row col-md-8 div2">
+            <div class="col-md-8 div2-01">
+                <input type="search" placeholder="Entrez le mot-clé" style="border: none;" class="input1">
+                <input type="submit" value="search" style="border: none;" class="input2">
+            </div>
+            <div class="col-md-2 div2-02">
+                <div class="dropdown drop1">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Connexion
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <form style="width: 350px; margin: 0px 5px 0px 5px;">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Connexion</button>
+                        </form>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 div2-03">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Inscription
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Inscription</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Nom</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Prénoms</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Date de naissance</label>
+                                        <input type="date" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <!-- a finir pour le sexe -->
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Sexe</label>
+                                        <input type="checkbox" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp"> Masculin
+                                        <input type="checkbox" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp"> Féminin
+                                        <input type="checkbox" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp"> Non-binaire
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Confirm mail</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                        <div id="emailHelp" class="form-text">Le mot de passe doit contenir:
+                                            <ul>
+                                                <li>Au moins un caractère majuscule</li>
+                                                <li>Au moins un caractère spacial (@, # ...)</li>
+                                                <li>Au moins un chiffre</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Confirm password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">J'ai lu et accepté les <a
+                                                href="#">conditions d'utilisations</a></label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">S'inscrire</button>
+                                </form>
+                            </div>
+                            <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div3">
+            <ul>
+                <li><a href="../Acceuil.html"><img src="../../Images/home icone.png" alt=""></a></li>
+                <li class="col-md-2" style="margin-left: 70px;"><a href="../Architecture.html">Architecture</a></li>
+                <li class="col-md-2"><a href="../Graphiste.html">Graphisme</a></li>
+                <li class="col-md-2"><a href="../NFTs.html">NFTs</a></li>
+                <li class="col-md-2" style="margin-left: -60px;"><a href="../Peintre.html">Peinture</a></li>
+                <li class="col-md-2"><a href="../Potier.html">Poterie</a></li>
+                <li class="col-md-2"><a href="../Photographe.html">Photographie</a></li>
+                <li class="col-mmd-1"><a href="../Sculpture.html">Sculpture</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="row">    
+        <section class="col-md-8">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../../PLAN/Plan2/Plan2-1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../PLAN/Plan2/Plan2-2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <!-- <div class="carousel-item">
+                    <img src="../../PLAN/Plan2/Plan2-4.jpg" class="d-block w-100" alt="...">
+                  </div> -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <section class="col-md-4">
+            <h2>Paiement</h2>
+            <form>
+                <div class="mb-3" >
+                  <label for="exampleInputEmail1" class="form-label">Adress PayPal</label>
+                  <input type="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit"  class="btn btn-primary" style="font-weight: bold; font-size: 0.9em;">Payé (5299.99$)</button>
+            </form>
+            
+            <br>
+            <h3><u>Description</u></h3>
+            <p>Ce plan est consititué de <strong>deux étages</strong>, dont <strong>un</strong> contenant <strong>quatre chambres</strong> contenant chacune <strong>une douche</strong>. On retrouve aussi dans ce plan <strong>une cuisine suffisament aérée</strong> au rez-de-chaussé. Au troisième etage, nous disposons <strong>d'un vaste espace</strong> idéal pour les festivités et offrant par la meme vue une belle vue de l'horizon </p>
+            <br>
+            <button type="submit" disabled class="btn btn-primary" style="font-weight: bold; font-size: 0.9em;">Download</button>
+
+        </section>
+
+    </section>
+
+    <section>
+        <section class="col-md-12 section2">
+            <div class="S2-div1">
+                <div class="row S2-div1-01">
+                    <div class="col-md-3 S2-div1-01-0A">
+                        <a href="#" download="hommeplom2.jpg"><img src="../../PLAN/Plan5/Plan5-6.jpg"
+                                alt="home" title="Voir plus"></a>
+                        <div class="S2-div1-01-0A-1">
+                            <button class="free">free</button>
+                            <!-- <button>Buy</button> -->
+                        </div>
+                    </div>
+                    <div class="col-md-3 S2-div1-01-0A">
+                        <a href="../Achitecture/Plan1.html" download="hommeplom2.jpg"><img src="../../PLAN/Plan1/Plan1-1.jpg" alt="home" title="Voir plus"></a>
+                        <div class="S2-div1-01-0A-1">
+                            <button>free</button>
+                            <!-- <button>buy</button> -->
+                        </div>
+                    </div>
+                    <div class="col-md-3 S2-div1-01-0A">
+                        <a href="#" download="hommeplom2.jpg"><img src="../../PLAN/Plan4/Plan4-1.jpg" alt="home" title="Voir plus"></a>
+                        <div class="S2-div1-01-0A-1">
+                            <!-- <button>free</button> -->
+                             <!-- Button trigger modal -->
+                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                1599.99$
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Paiement-PayPal</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3">
+                                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                                              <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                          </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 S2-div2-01-0A">
+                        <a href="#" download="hommeplom2.jpg"><img
+                                src="../../PLAN/Plan5/Plan5-1.jpg" alt="home" title="Voir plus"></a>
+                        <div class="S2-div2-01-0A-1">
+                            <!-- <button>free</button> -->
+                             <!-- Button trigger modal -->
+                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                2099.99$
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Paiement-PayPal</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3">
+                                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                                              <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                          </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="S2-div1">
+                <div class="row S2-div1-01">
+                    <div class="col-md-3 S2-div1-01-0A">
+                        <a href="#" download="hommeplom2.jpg"><img src="../../PLAN/Plan5/Plan5-8.jpg" alt="home" title="Voir plus"></a>
+                        <div class="S2-div1-01-0A-1">
+                            <!-- <button>free</button> -->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                3469.99$
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Paiement-PayPal</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Email
+                                                        address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label">Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Check me
+                                                        out</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 S2-div1-01-0A">
+                        <a href="#" download="hommeplom2.jpg"><img src="../../PLAN/Plan5/Plan5-7.jpg"
+                                alt="home" title="Voir plus"></a>
+                        <div class="S2-div1-01-0A-1">
+                            <button class="free">free</button>
+                            <!-- <button>Buy</button> -->
+                        </div>
+                    </div>
+                    <div class="col-md-3 S2-div1-01-0A">
+                        <a href="#" download="hommeplom2.jpg"><img src="../../PLAN/Plan5/Plan5-2.jpg" alt="home" title="Voir plus"></a>
+                        <div class="S2-div1-01-0A-1">
+                            <!-- <button>free</button> -->
+                             <!-- Button trigger modal -->
+                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                2769.99$
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Paiement-PayPal</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3">
+                                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                                              <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                          </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 S2-div2-01-0A">
+                        <a href="#" download="hommeplom2.jpg"><img
+                                src="../../PLAN/Plan5/Plan5-3.jpg" alt="home" title="Voir plus"></a>
+                        <div class="S2-div2-01-0A-1">
+                            <!-- <button>free</button> -->
+                             <!-- Button trigger modal -->
+                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                3499.99$
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Paiement-PayPal</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                              <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3">
+                                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                                              <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                          </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+        </section>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
